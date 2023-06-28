@@ -1,0 +1,82 @@
+﻿@page "/addguestpage"
+
+@using Kodtest_Liseberg_LIA.Shared.DTOs;
+
+@inject HttpClient http;
+@inject NavigationManager navigation;
+
+<nav>
+    <div class="sidebar" style="display:flex; justify-content:space-evenly; background-color: lightblue">
+        <button type="button" @onclick="() => NavigateToStartPage()">Startsida</button>
+
+        <button class="btn btn-primary">Skapa gäst</button>
+
+        <button type="button" @onclick="() => NavigateToViewAllGuestsPage()">Se alla gäster</button>
+
+        <button type="button" @onclick="() => NavigateToSearchGuestPage()">Sök efter gäst</button>
+
+        <button type="button" @onclick="() => NavigateToUpdateGuestPage()">Ändra gäst</button>
+
+        <button type="button" @onclick="() => NavigateToDeleteGuestPage()">Ta bort gäst</button>
+    </div>
+</nav>
+
+<h3>AddGuestPage</h3>
+
+<p>Förnamn</p>
+
+<input @bind="tempGuest.FirstName" />
+
+<p>Efternamn</p>
+
+<input @bind="tempGuest.LastName" />
+
+<p>Email</p>
+
+<input @bind="tempGuest.Email" />
+
+<p>Telefonnummer</p>
+
+<input @bind="tempGuest.Telephone" />
+
+<button type="button" class="btn btn-primary" @onclick="AddGuest">Lägg till gäst</button>
+
+@code {
+    GuestDto tempGuest = new GuestDto();
+
+    private void AddGuest()
+    {
+        http.PostAsJsonAsync("GuestAdd", tempGuest);
+
+        tempGuest.Id = null;
+        tempGuest.FirstName = null;
+        tempGuest.LastName = null;
+        tempGuest.Email = null;
+        tempGuest.Telephone = null;
+    }
+
+    private void NavigateToStartPage()
+    {
+        navigation.NavigateTo("/");
+    }
+
+    private void NavigateToViewAllGuestsPage()
+    {
+        navigation.NavigateTo("/viewallguestspage");
+    }
+
+    private void NavigateToSearchGuestPage()
+    {
+        navigation.NavigateTo("/searchguestpage");
+    }
+
+    private void NavigateToUpdateGuestPage()
+    {
+        navigation.NavigateTo("/updateguestpage");
+    }
+
+    private void NavigateToDeleteGuestPage()
+    {
+        navigation.NavigateTo("/deleteguestpage");
+    }
+}

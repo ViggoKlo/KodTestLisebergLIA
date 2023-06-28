@@ -1,0 +1,353 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Server\\Kodtest Liseberg LIA.Server.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\DataAccess\\DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\ViggoKloberg-NET22GB\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ViggoKloberg-NET22GB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Client\\Kodtest Liseberg LIA.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Client\\Kodtest Liseberg LIA.Client.csproj",
+        "projectName": "Kodtest_Liseberg_LIA.Client",
+        "projectPath": "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Client\\Kodtest Liseberg LIA.Client.csproj",
+        "packagesPath": "C:\\Users\\ViggoKloberg-NET22GB\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ViggoKloberg-NET22GB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Shared\\Kodtest Liseberg LIA.Shared.csproj": {
+                "projectPath": "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Shared\\Kodtest Liseberg LIA.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[7.0.4, 7.0.4]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Server\\Kodtest Liseberg LIA.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Server\\Kodtest Liseberg LIA.Server.csproj",
+        "projectName": "Kodtest_Liseberg_LIA.Server",
+        "projectPath": "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Server\\Kodtest Liseberg LIA.Server.csproj",
+        "packagesPath": "C:\\Users\\ViggoKloberg-NET22GB\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ViggoKloberg-NET22GB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\DataAccess\\DataAccess.csproj"
+              },
+              "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Client\\Kodtest Liseberg LIA.Client.csproj": {
+                "projectPath": "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Client\\Kodtest Liseberg LIA.Client.csproj"
+              },
+              "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Shared\\Kodtest Liseberg LIA.Shared.csproj": {
+                "projectPath": "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Shared\\Kodtest Liseberg LIA.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Shared\\Kodtest Liseberg LIA.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Shared\\Kodtest Liseberg LIA.Shared.csproj",
+        "projectName": "Kodtest Liseberg LIA.Shared",
+        "projectPath": "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Shared\\Kodtest Liseberg LIA.Shared.csproj",
+        "packagesPath": "C:\\Users\\ViggoKloberg-NET22GB\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ViggoKloberg-NET22GB\\Documents\\GitHub\\KodTestLisebergLIA\\Kodtest Liseberg LIA\\Kodtest Liseberg LIA\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ViggoKloberg-NET22GB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

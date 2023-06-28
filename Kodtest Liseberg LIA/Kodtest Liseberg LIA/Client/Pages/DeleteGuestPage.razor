@@ -1,0 +1,69 @@
+﻿@page "/deleteguestpage"
+
+@using Kodtest_Liseberg_LIA.Shared.DTOs;
+
+@inject HttpClient http;
+@inject NavigationManager navigation;
+
+<nav>
+    <div class="sidebar" style="display:flex; justify-content:space-evenly; background-color: lightblue">
+        <button type="button" @onclick="() => NavigateToStartPage()">Startsida</button>
+
+        <button type="button" @onclick="() => NavigateToAddGuestPage()">Skapa gäst</button>
+
+        <button type="button" @onclick="() => NavigateToViewAllGuestsPage()">Se alla gäster</button>
+
+        <button type="button" @onclick="() => NavigateToSearchGuestPage()">Sök efter gäst</button>
+
+        <button type="button" @onclick="() => NavigateToUpdateGuestPage()">Ändra gäst</button>
+
+        <button class="btn btn-primary">Ta bort gäst</button>
+    </div>
+</nav>
+
+<h3>DeleteGuestPage</h3>
+
+<p>Id på gästen att ta bort</p>
+
+<input @bind="tempId" />
+
+<button type="button" class="btn btn-primary" @onclick="() => DeleteGuest(tempId)">Ta bort</button>
+
+@code {
+    string tempId = string.Empty;
+
+    public void DeleteGuest(string id)
+    {
+        if (id != string.Empty)
+        {
+            http.DeleteFromJsonAsync<GuestDto>($"/GuestDelete/{Guid.Parse(id)}");
+
+            tempId = string.Empty;
+        }
+    }
+
+    public void NavigateToAddGuestPage()
+    {
+        navigation.NavigateTo("/addguestpage");
+    }
+
+    public void NavigateToViewAllGuestsPage()
+    {
+        navigation.NavigateTo("/viewallguestspage");
+    }
+
+    public void NavigateToSearchGuestPage()
+    {
+        navigation.NavigateTo("/searchguestpage");
+    }
+
+    public void NavigateToUpdateGuestPage()
+    {
+        navigation.NavigateTo("/updateguestpage");
+    }
+
+    private void NavigateToStartPage()
+    {
+        navigation.NavigateTo("/");
+    }
+}

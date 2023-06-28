@@ -1,0 +1,50 @@
+﻿@page "/"
+
+@inject NavigationManager navigation;
+
+<PageTitle>Index</PageTitle>
+
+<nav>
+    <div class="sidebar" style="display:flex; justify-content:space-evenly; background-color: lightblue">
+        <button class="btn btn-primary">Startsida</button>
+
+        <button type="button" @onclick="() => NavigateToAddGuestPage()">Skapa gäst</button>
+
+        <button type="button" @onclick="() => NavigateToViewAllGuestsPage()">Se alla gäster</button>
+
+        <button type="button" @onclick="() => NavigateToSearchGuestPage()">Sök efter gäst</button>
+
+        <button type="button" @onclick="() => NavigateToUpdateGuestPage()">Ändra gäst</button>
+
+        <button type="button" @onclick="() => NavigateToDeleteGuestPage()">Ta bort gäst</button>
+    </div>
+</nav>
+
+<h1>Startsida</h1>
+
+@code{
+    private void NavigateToAddGuestPage()
+    {
+        navigation.NavigateTo("/addguestpage");
+    }
+
+    private void NavigateToViewAllGuestsPage()
+    {
+        navigation.NavigateTo("/viewallguestspage");
+    }
+
+    private void NavigateToSearchGuestPage()
+    {
+        navigation.NavigateTo("/searchguestpage");
+    }
+
+    private void NavigateToUpdateGuestPage()
+    {
+        navigation.NavigateTo("/updateguestpage");
+    }
+
+    private void NavigateToDeleteGuestPage()
+    {
+        navigation.NavigateTo("/deleteguestpage");
+    }
+}

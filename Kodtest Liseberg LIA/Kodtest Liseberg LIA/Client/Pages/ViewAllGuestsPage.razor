@@ -1,0 +1,91 @@
+﻿@page "/viewallguestspage"
+
+@using Kodtest_Liseberg_LIA.Shared.DTOs;
+
+@inject HttpClient http;
+@inject NavigationManager navigation;
+
+<nav>
+    <div class="sidebar" style="display:flex; justify-content:space-evenly; background-color: lightblue">
+        <button type="button" @onclick="() => NavigateToStartPage()">Startsida</button>
+
+        <button type="button" @onclick="() => NavigateToAddGuestPage()">Skapa gäst</button>
+
+        <button class="btn btn-primary">Se alla gäster</button>
+
+        <button type="button" @onclick="() => NavigateToSearchGuestPage()">Sök efter gäst</button>
+
+        <button type="button" @onclick="() => NavigateToUpdateGuestPage()">Ändra gäst</button>
+
+        <button type="button" @onclick="() => NavigateToDeleteGuestPage()">Ta bort gäst</button>
+    </div>
+</nav>
+
+<h3>ViewAllGuestsPage</h3>
+
+@if (!Guests.Any())
+{
+    <h4>Inga gäster skapade</h4>
+}
+else
+{
+    foreach (var guest in Guests)
+    {
+        <div style="background-color:lightgray; border:1px solid black">
+            @guest.Id
+            @guest.FirstName
+            @guest.LastName
+            @guest.Email
+            @guest.Telephone
+        </div>
+    }
+}
+
+
+
+@code {
+    List<GuestDto> Guests { get; set; } = new List<GuestDto>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await FetchGuests();
+    }
+
+    async Task FetchGuests()
+    {
+        var tempList = await http.GetFromJsonAsync<List<GuestDto>>("GuestsAll");
+
+        if (tempList != null)
+        {
+            foreach (var guest in tempList)
+            {
+                Guests.Add(guest);
+            }
+        }
+    }
+
+    public void NavigateToAddGuestPage()
+    {
+        navigation.NavigateTo("/addguestpage");
+    }
+
+    private void NavigateToStartPage()
+    {
+        navigation.NavigateTo("/");
+    }
+
+    public void NavigateToSearchGuestPage()
+    {
+        navigation.NavigateTo("/searchguestpage");
+    }
+
+    public void NavigateToUpdateGuestPage()
+    {
+        navigation.NavigateTo("/updateguestpage");
+    }
+
+    public void NavigateToDeleteGuestPage()
+    {
+        navigation.NavigateTo("/deleteguestpage");
+    }
+}
